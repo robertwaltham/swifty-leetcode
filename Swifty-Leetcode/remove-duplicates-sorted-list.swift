@@ -49,7 +49,7 @@ public class ListNode {
 }
  
 
-class Solution {
+class Solution_DeleteDuplicates {
     func deleteDuplicates(_ head: ListNode?) -> ListNode? {
         guard let head else {
             return nil
@@ -63,9 +63,7 @@ class Solution {
         var fast = head.next!
     
         while fast.next != nil {
-            
             if slow.val == fast.val {
-                print("dropping \(fast.val)")
                 fast = fast.next!
                 slow.next = fast
             } else if fast.next != nil {

@@ -12,6 +12,7 @@
 		D10314642AB12C5A000E689F /* Swifty_LeetcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10314632AB12C5A000E689F /* Swifty_LeetcodeTests.swift */; };
 		D10314652AB12C5A000E689F /* Swifty_Leetcode.h in Headers */ = {isa = PBXBuildFile; fileRef = D10314572AB12C5A000E689F /* Swifty_Leetcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D103146F2AB12C8E000E689F /* remove-duplicates-sorted-list.swift in Sources */ = {isa = PBXBuildFile; fileRef = D103146E2AB12C8E000E689F /* remove-duplicates-sorted-list.swift */; };
+		D10314712AB136B3000E689F /* climb-stairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10314702AB136B3000E689F /* climb-stairs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		D103145E2AB12C5A000E689F /* Swifty-LeetcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swifty-LeetcodeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10314632AB12C5A000E689F /* Swifty_LeetcodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swifty_LeetcodeTests.swift; sourceTree = "<group>"; };
 		D103146E2AB12C8E000E689F /* remove-duplicates-sorted-list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "remove-duplicates-sorted-list.swift"; sourceTree = "<group>"; };
+		D10314702AB136B3000E689F /* climb-stairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "climb-stairs.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				D10314572AB12C5A000E689F /* Swifty_Leetcode.h */,
 				D10314582AB12C5A000E689F /* Swifty_Leetcode.docc */,
 				D103146E2AB12C8E000E689F /* remove-duplicates-sorted-list.swift */,
+				D10314702AB136B3000E689F /* climb-stairs.swift */,
 			);
 			path = "Swifty-Leetcode";
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D103146F2AB12C8E000E689F /* remove-duplicates-sorted-list.swift in Sources */,
+				D10314712AB136B3000E689F /* climb-stairs.swift in Sources */,
 				D10314592AB12C5A000E689F /* Swifty_Leetcode.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

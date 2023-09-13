@@ -16,7 +16,7 @@ final class Swifty_LeetcodeTests: XCTestCase {
         func testCase(input: [Int]?, expected: [Int]?) {
             
             let inputNode = ListNode.fromArray(arr: input)
-            let result = Solution.init().deleteDuplicates(inputNode)
+            let result = Solution_DeleteDuplicates.init().deleteDuplicates(inputNode)
             let resultArr = result?.toArray()
             
             XCTAssertEqual(resultArr, expected, "expected \(String(describing: resultArr)) to equal \(String(describing: expected))")
@@ -31,6 +31,21 @@ final class Swifty_LeetcodeTests: XCTestCase {
         testCase(input: [1, 2, 3, 3], expected: [1, 2, 3])
         testCase(input: [1, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3], expected: [1, 2, 3])
 
+    }
+    
+    func testClimbStairs() {
+        
+        func testCase(stairs: Int, expected: Int) {
+            XCTAssertEqual(Solution_ClimbStairs.climbStairs(stairs), expected)
+        }
+        
+        testCase(stairs: 0, expected: 0)
+        testCase(stairs: 1, expected: 1)
+        testCase(stairs: 2, expected: 2)
+        testCase(stairs: 3, expected: 3)
+        testCase(stairs: 4, expected: 5)
+        testCase(stairs: 5, expected: 8)
+        testCase(stairs: 6, expected: 13)
     }
 
 }
