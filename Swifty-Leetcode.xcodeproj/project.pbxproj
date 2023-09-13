@@ -11,6 +11,7 @@
 		D103145F2AB12C5A000E689F /* Swifty_Leetcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D10314542AB12C5A000E689F /* Swifty_Leetcode.framework */; };
 		D10314642AB12C5A000E689F /* Swifty_LeetcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10314632AB12C5A000E689F /* Swifty_LeetcodeTests.swift */; };
 		D10314652AB12C5A000E689F /* Swifty_Leetcode.h in Headers */ = {isa = PBXBuildFile; fileRef = D10314572AB12C5A000E689F /* Swifty_Leetcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D103146F2AB12C8E000E689F /* remove-duplicates-sorted-list.swift in Sources */ = {isa = PBXBuildFile; fileRef = D103146E2AB12C8E000E689F /* remove-duplicates-sorted-list.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D10314582AB12C5A000E689F /* Swifty_Leetcode.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Swifty_Leetcode.docc; sourceTree = "<group>"; };
 		D103145E2AB12C5A000E689F /* Swifty-LeetcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swifty-LeetcodeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10314632AB12C5A000E689F /* Swifty_LeetcodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swifty_LeetcodeTests.swift; sourceTree = "<group>"; };
+		D103146E2AB12C8E000E689F /* remove-duplicates-sorted-list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "remove-duplicates-sorted-list.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				D10314572AB12C5A000E689F /* Swifty_Leetcode.h */,
 				D10314582AB12C5A000E689F /* Swifty_Leetcode.docc */,
+				D103146E2AB12C8E000E689F /* remove-duplicates-sorted-list.swift */,
 			);
 			path = "Swifty-Leetcode";
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D103146F2AB12C8E000E689F /* remove-duplicates-sorted-list.swift in Sources */,
 				D10314592AB12C5A000E689F /* Swifty_Leetcode.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +406,7 @@
 		D103146C2AB12C5A000E689F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P87URHZFZ4;
@@ -418,6 +423,7 @@
 		D103146D2AB12C5A000E689F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P87URHZFZ4;
