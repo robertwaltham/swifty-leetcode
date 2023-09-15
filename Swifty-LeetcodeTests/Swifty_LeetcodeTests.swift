@@ -47,5 +47,19 @@ final class Swifty_LeetcodeTests: XCTestCase {
         testCase(stairs: 5, expected: 8)
         testCase(stairs: 6, expected: 13)
     }
+    
+    func testJumpGame() {
+        func testCase(nums: [Int], expected: Bool) {
+            XCTAssertEqual(Solution_JumpGame().canJump(nums), expected)
+        }
+        
+        testCase(nums: [2,3,1,1,4], expected: true)
+        testCase(nums: [3,2,1,0,4], expected: false)
+        testCase(nums: [1], expected: true)
+        testCase(nums: [0], expected: true)
+        testCase(nums: [2, 2, 0, 3, 3, 0], expected: true)
+        testCase(nums: [5, 6, 1, 0, 0, 0], expected: true)
+
+    }
 
 }
