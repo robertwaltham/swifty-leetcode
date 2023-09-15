@@ -14,6 +14,7 @@
 		D103146F2AB12C8E000E689F /* remove-duplicates-sorted-list.swift in Sources */ = {isa = PBXBuildFile; fileRef = D103146E2AB12C8E000E689F /* remove-duplicates-sorted-list.swift */; };
 		D10314712AB136B3000E689F /* climb-stairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10314702AB136B3000E689F /* climb-stairs.swift */; };
 		D12064912AB3DBEF00127275 /* jump-game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12064902AB3DBEF00127275 /* jump-game.swift */; };
+		D12064932AB3E81100127275 /* task-scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12064922AB3E81100127275 /* task-scheduler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		D103146E2AB12C8E000E689F /* remove-duplicates-sorted-list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "remove-duplicates-sorted-list.swift"; sourceTree = "<group>"; };
 		D10314702AB136B3000E689F /* climb-stairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "climb-stairs.swift"; sourceTree = "<group>"; };
 		D12064902AB3DBEF00127275 /* jump-game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "jump-game.swift"; sourceTree = "<group>"; };
+		D12064922AB3E81100127275 /* task-scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "task-scheduler.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				D103146E2AB12C8E000E689F /* remove-duplicates-sorted-list.swift */,
 				D10314702AB136B3000E689F /* climb-stairs.swift */,
 				D12064902AB3DBEF00127275 /* jump-game.swift */,
+				D12064922AB3E81100127275 /* task-scheduler.swift */,
 			);
 			path = "Swifty-Leetcode";
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				D12064912AB3DBEF00127275 /* jump-game.swift in Sources */,
 				D10314712AB136B3000E689F /* climb-stairs.swift in Sources */,
 				D10314592AB12C5A000E689F /* Swifty_Leetcode.docc in Sources */,
+				D12064932AB3E81100127275 /* task-scheduler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

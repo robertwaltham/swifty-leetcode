@@ -61,5 +61,17 @@ final class Swifty_LeetcodeTests: XCTestCase {
         testCase(nums: [5, 6, 1, 0, 0, 0], expected: true)
 
     }
+    
+    
+    func testTaskScheduler() {
+        func testCase(tasks: [Character], n: Int, expected: Int) {
+            XCTAssertEqual(Solution_TaskScheduler().leastInterval(tasks, n), expected)
+        }
 
+        testCase(tasks: ["A","A","A","B","B","B"], n: 2, expected: 8)
+        testCase(tasks: ["A","A","A","B","B","B"], n: 0, expected: 6)
+        testCase(tasks: ["A","A","A","A","A","A","B","C","D","E","F","G"], n: 2, expected: 16)
+        testCase(tasks: ["A","A","A","B","B"], n: 0, expected: 5)
+
+    }
 }
