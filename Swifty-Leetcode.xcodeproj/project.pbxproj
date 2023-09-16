@@ -15,6 +15,7 @@
 		D10314712AB136B3000E689F /* climb-stairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10314702AB136B3000E689F /* climb-stairs.swift */; };
 		D12064912AB3DBEF00127275 /* jump-game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12064902AB3DBEF00127275 /* jump-game.swift */; };
 		D12064932AB3E81100127275 /* task-scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12064922AB3E81100127275 /* task-scheduler.swift */; };
+		D12064952AB60A9300127275 /* longest-substring-no-repeats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12064942AB60A9300127275 /* longest-substring-no-repeats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		D10314702AB136B3000E689F /* climb-stairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "climb-stairs.swift"; sourceTree = "<group>"; };
 		D12064902AB3DBEF00127275 /* jump-game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "jump-game.swift"; sourceTree = "<group>"; };
 		D12064922AB3E81100127275 /* task-scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "task-scheduler.swift"; sourceTree = "<group>"; };
+		D12064942AB60A9300127275 /* longest-substring-no-repeats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "longest-substring-no-repeats.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				D10314702AB136B3000E689F /* climb-stairs.swift */,
 				D12064902AB3DBEF00127275 /* jump-game.swift */,
 				D12064922AB3E81100127275 /* task-scheduler.swift */,
+				D12064942AB60A9300127275 /* longest-substring-no-repeats.swift */,
 			);
 			path = "Swifty-Leetcode";
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12064952AB60A9300127275 /* longest-substring-no-repeats.swift in Sources */,
 				D103146F2AB12C8E000E689F /* remove-duplicates-sorted-list.swift in Sources */,
 				D12064912AB3DBEF00127275 /* jump-game.swift in Sources */,
 				D10314712AB136B3000E689F /* climb-stairs.swift in Sources */,

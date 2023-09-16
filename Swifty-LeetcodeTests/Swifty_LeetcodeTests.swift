@@ -74,4 +74,20 @@ final class Swifty_LeetcodeTests: XCTestCase {
         testCase(tasks: ["A","A","A","B","B"], n: 0, expected: 5)
 
     }
+    
+    
+    func testLongestSubstringNoRepeats() {
+        func testCase(s: String, expected: Int) {
+            XCTAssertEqual(Solution_LongestSubstring().lengthOfLongestSubstring(s), expected)
+        }
+        testCase(s: "a", expected: 1)
+        testCase(s: "au", expected: 2)
+
+        
+        testCase(s: "aaaaaaa", expected: 1)
+        testCase(s: "abcdefg", expected: 7)
+        testCase(s: "abcabcbb", expected: 3)
+        testCase(s: "pwwkew", expected: 3)
+        testCase(s: "", expected: 0)
+    }
 }
