@@ -90,4 +90,17 @@ final class Swifty_LeetcodeTests: XCTestCase {
         testCase(s: "pwwkew", expected: 3)
         testCase(s: "", expected: 0)
     }
+    
+    func testLongestSubarraySum() {
+        func testCase(nums: [Int], expected: Int) {
+            XCTAssertEqual(Solution_LongestSubarray().maxSubArray(nums), expected)
+        }
+        
+        testCase(nums: [], expected: 0)
+        testCase(nums: [0], expected: 0)
+        testCase(nums: [1], expected: 1)
+        testCase(nums: [-1], expected: -1)
+        testCase(nums: [-2,1,-3,4,-1,2,1,-5,4], expected: 6)
+        testCase(nums: [5,4,-1,7,8], expected: 23)
+    }
 }
