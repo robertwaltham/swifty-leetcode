@@ -17,6 +17,8 @@
 		D12064932AB3E81100127275 /* task-scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12064922AB3E81100127275 /* task-scheduler.swift */; };
 		D12064952AB60A9300127275 /* longest-substring-no-repeats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12064942AB60A9300127275 /* longest-substring-no-repeats.swift */; };
 		D12064972AB60F1000127275 /* longest-subarray-sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12064962AB60F1000127275 /* longest-subarray-sum.swift */; };
+		D12064992AB9041200127275 /* clone-graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12064982AB9041200127275 /* clone-graph.swift */; };
+		D120649B2ABA226500127275 /* all-nodes-distance-k-in-binary-tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = D120649A2ABA226500127275 /* all-nodes-distance-k-in-binary-tree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		D12064922AB3E81100127275 /* task-scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "task-scheduler.swift"; sourceTree = "<group>"; };
 		D12064942AB60A9300127275 /* longest-substring-no-repeats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "longest-substring-no-repeats.swift"; sourceTree = "<group>"; };
 		D12064962AB60F1000127275 /* longest-subarray-sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "longest-subarray-sum.swift"; sourceTree = "<group>"; };
+		D12064982AB9041200127275 /* clone-graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "clone-graph.swift"; sourceTree = "<group>"; };
+		D120649A2ABA226500127275 /* all-nodes-distance-k-in-binary-tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "all-nodes-distance-k-in-binary-tree.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 				D12064922AB3E81100127275 /* task-scheduler.swift */,
 				D12064942AB60A9300127275 /* longest-substring-no-repeats.swift */,
 				D12064962AB60F1000127275 /* longest-subarray-sum.swift */,
+				D12064982AB9041200127275 /* clone-graph.swift */,
+				D120649A2ABA226500127275 /* all-nodes-distance-k-in-binary-tree.swift */,
 			);
 			path = "Swifty-Leetcode";
 			sourceTree = "<group>";
@@ -216,6 +222,8 @@
 				D12064952AB60A9300127275 /* longest-substring-no-repeats.swift in Sources */,
 				D103146F2AB12C8E000E689F /* remove-duplicates-sorted-list.swift in Sources */,
 				D12064912AB3DBEF00127275 /* jump-game.swift in Sources */,
+				D12064992AB9041200127275 /* clone-graph.swift in Sources */,
+				D120649B2ABA226500127275 /* all-nodes-distance-k-in-binary-tree.swift in Sources */,
 				D10314712AB136B3000E689F /* climb-stairs.swift in Sources */,
 				D10314592AB12C5A000E689F /* Swifty_Leetcode.docc in Sources */,
 				D12064932AB3E81100127275 /* task-scheduler.swift in Sources */,

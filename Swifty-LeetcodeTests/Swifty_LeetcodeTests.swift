@@ -103,4 +103,81 @@ final class Swifty_LeetcodeTests: XCTestCase {
         testCase(nums: [-2,1,-3,4,-1,2,1,-5,4], expected: 6)
         testCase(nums: [5,4,-1,7,8], expected: 23)
     }
+    
+    func testCloneGraph() {
+        func createGraph(adj: [[Int]]) -> Node? {
+            guard adj.count > 0 else {
+                return nil
+            }
+            
+            var nodes = [Node]()
+            for i in 0..<adj.count {
+                nodes.append(Node(i + 1)) // first value is 1 not 0
+            }
+            
+            for i in 0..<adj.count {
+                nodes[i].neighbors = adj[i].map({ j in
+                    nodes[j - 1]
+                })
+            }
+            
+            return nodes[0]
+        }
+    
+        
+        func testCase(adj: [[Int]]) {
+            let graph = createGraph(adj: adj)
+            let clone = Solution_CloneGraph().cloneGraph(graph)
+            print(clone as Any)
+        }
+        
+        testCase(adj: [[2,4],[1,3],[2,4],[1,3]])
+    }
+    
+    
+    func testDistanceK() {
+        
+        func testCase(nodes: [Int?], target: Int, distance: Int, expected: [Int]) {
+            if let (root, target) = createGraph(nodes: nodes, target: target) {
+                XCTAssertEqual(Solution_DistanceK().distanceK(root, target, distance), expected)
+            }
+        }
+        
+        func createGraph(nodes: [Int?], target: Int) -> (TreeNode_DistanceK, TreeNode_DistanceK)? {
+            
+            guard nodes.count > 0 else {
+                return nil
+            }
+            
+            let tree_nodes = nodes.map { $0 != nil ? TreeNode_DistanceK($0!) : nil }
+            let root = tree_nodes[0]!
+            
+            var target_node: TreeNode_DistanceK? = nil
+            for (i, node) in tree_nodes.enumerated() {
+                let parent = (i - 1) / 2
+                if i > 0 && node != nil {
+                    if i % 2 == 0 {
+                        tree_nodes[parent]?.right = node
+                    } else {
+                        tree_nodes[parent]?.left = node
+                    }
+                }
+                
+                if node?.val == target {
+                    target_node = node
+                }
+            }
+        
+            return (root, target_node!)
+        }
+        
+        testCase(nodes: [3,5,1,6,2,0,8,nil,nil,7,4], target: 5, distance: 2, expected: [7,4,1])
+        testCase(nodes: [0,2,1,nil,nil,3], target: 3, distance: 3, expected: [2])
+        testCase(nodes: [0,1,nil,3,2], target: 2, distance: 1, expected: [1])
+        // TODO: fix input format, this test case doesn't work due to the input array not being laid out as absolute positions and rather relative to previous nodes
+        testCase(nodes: [0,1,nil,nil,2,nil,3,nil,4], target: 3, distance: 0, expected: [3])
+        // TODO: this case fails
+        testCase(nodes: [0,1,2,nil,3,nil,5,4], target: 3, distance: 3, expected: [2])
+
+    }
 }
